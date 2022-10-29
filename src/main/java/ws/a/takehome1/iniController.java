@@ -6,6 +6,10 @@
 package ws.a.takehome1;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  *
@@ -14,5 +18,19 @@ import org.springframework.stereotype.Controller;
 
 @Controller
 public class iniController {
+    @RequestMapping("/nexthealing")
+    
+    public String healduls(
+            @RequestParam(value = "nTempatwisata") String form1,
+            @RequestParam(value = "lokasiTW") String form2,
+            Model kurir
+    ){
+        kurir.addAttribute("pTW", form1);
+        kurir.addAttribute("pLokasi",form2);
+        
+        return "view";
+    
+    }
+
     
 }
