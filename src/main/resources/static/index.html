@@ -13,12 +13,12 @@ and open the template in the editor.
     <body>
         <h1>Healing</h1>
         <hr/>
-        <form action="/nexthealing">
+        <form action="/nexthealing" method="post" enctype="multipart/form-data">
             Nama : <input type="text" name="nTempatwisata"/>
             <br/><br/>
             Lokasi : <input type="text" name="lokasiTW"/>
             <br/><br/>
-            Gambar : <input type="file" name="gambarTW" id="gambarTW" accept="image/*.png, .jpg">
+            Gambar : <input type="file" name="gambarTW" accept="image/*">
             <br><br>
 
             <input type="submit" value="Save"/>
