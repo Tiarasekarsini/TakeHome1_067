@@ -12,10 +12,13 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <fieldset>
+    <center><fieldset>
         <h1>Healing</h1>
         <hr/>
         <style>
+            fieldset{
+                width: 750px;
+            }
             body{
                 background-size:cover;
                 background-repeat: no-repeat;
@@ -44,18 +47,18 @@ and open the template in the editor.
             }
         </style>
         <form action="/nexthealing" method="post" enctype="multipart/form-data">
-            <p>
+            <p style="float: left">
             Nama Tempat Wisata: <input type="text" name="nTempatwisata"/>
             </p><br/>
-            <p>
+            <p style="float: left">
             Lokasi Tempat Wisata: <input type="text" name="lokasiTW"/>
             </p><br/>
-            <p>
+            <p style="float: left">
             Gambar Tempat Wisata: <input type="file" name="gambarTW" accept="image/*">
             </p>
             <br/><br/>
-            <input type="submit" value="SAVE" style=" font-family: 'Itim', cursive; font-size:20px;background-color: grey; color: white;"/>
+            <input type="submit" value="SAVE" style=" font-family: 'Itim', cursive; font-size:20px;background-color: grey; color: white; float:right; margin-top: 60px; margin-bottom: 20px; margin-right: 30px;"/>
             <br><br>
-        </fieldset>
+            </fieldset></center>
     </body>
 </html>
